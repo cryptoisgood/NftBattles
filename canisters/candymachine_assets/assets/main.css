@@ -1,7 +1,23 @@
+
 body {
     font-family: sans-serif !important;
     font-size: 1.5rem !important;
-    background-color: #021c2d !important;
+}
+
+.title-align{
+    text-align: center;
+    padding-top: 40px;
+}
+
+.title{
+    font-family: serif;
+    font-size: 80pt;
+    margin-bottom: 40px;
+}
+
+.font-body{
+    font-family: serif;
+    font-size: 40pt;
 }
 
 img {
@@ -36,10 +52,44 @@ button[type="submit"] {
 #greeting:empty {
     display: none;
 }
-.margin-top{
-    margin-top: 400px;
+.counter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 70%;
+    margin: 100px auto;
+    padding: 10px;
+    background: linear-gradient(25deg, #252525, #1b1b2c, #262626);
 }
 
-.minter-dialog {
+.counter .time {
+    margin-right: 30px;
+}
 
+.counter .time-value {
+    padding: 1px;
+    font-size: 500%;
+    line-height: 1;
+}
+
+.time-label {
+    text-align: center;
+    font-size: 20px;
+}
+
+.margin-cube{
+    margin-top: 80px;
+}
+
+.mint-button{
+    padding: 50px !important;
+    border: none !important;
+}
+
+.mint-button:hover {
+    background-color: rgba(13, 110, 253, 0.32) !important;
+}
+
+.viewp{
+    height:100vh;
 }

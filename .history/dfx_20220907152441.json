@@ -1,0 +1,45 @@
+{
+  "canisters": {
+    "dip721": {
+      "package": "dip721",
+      "candid": "canisters/dip721/src/main.did",
+      "type": "rust"
+    },
+    "dip20": {
+      "package": "token",
+      "candid": "canisters/dip20/src/token.did",
+      "type": "rust"
+    },
+    "candymachine": {
+      "type": "custom",
+      "build": "npx azle candymachine",
+      "root": "canisters/candymachine",
+      "ts": "canisters/candymachine/main.ts",
+      "candid": "canisters/candymachine/main.did",
+      "wasm": "target/wasm32-unknown-unknown/release/candymachine.wasm"
+    },
+    "candymachine_assets": {
+      "frontend": {
+        "entrypoint": "canisters/candymachine_assets/src/index.html"
+      },
+      "source": [
+        "dist/candymachine_assets/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "dfx": "0.11.1",
+  "networks": {
+    "local": {
+      "bind": "127.0.0.1:8000",
+      "type": "ephemeral"
+    }
+  },
+  "version": 1
+}

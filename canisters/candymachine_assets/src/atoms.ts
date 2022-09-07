@@ -1,7 +1,5 @@
 import {atom} from "recoil";
 
-
-
 const localStorageEffect = key => ({setSelf, onSet}) => {
     const savedValue = localStorage.getItem(key)
     if (savedValue != null) {
@@ -15,11 +13,11 @@ const localStorageEffect = key => ({setSelf, onSet}) => {
     });
 };
 
-
 export const loadingAtom = atom({
     key: 'loading',
     default: false
 });
+
 export const connectedAtom = atom({
     key: 'connected',
     default: false
@@ -56,6 +54,14 @@ export const isInitiatedAtom = atom({
     default: false,
     effects: [
         localStorageEffect("is_initiated")
+    ]
+});
+
+export const mintedAtom = atom({
+    key: 'minted',
+    default: false,
+    effects: [
+        localStorageEffect("minted")
     ]
 });
 
