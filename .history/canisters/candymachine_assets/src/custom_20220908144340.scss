@@ -1,0 +1,7 @@
+// change the theme
+$theme-colors: (
+  "primary": #880808
+);
+$modal-content-bg:                  #6c757d;
+// Import Bootstrap and its default variables
+@import '~bootstrap/scss/bootstrap.scss';

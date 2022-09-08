@@ -1,0 +1,57 @@
+// change the theme
+$theme-colors: (
+  "primary": #880808
+);
+$modal-content-bg:                  black;
+$list-group-bg: rgb(34,37,41);
+$modal-header-border-color: rgb(34,37,41);
+$btn-close-color: white;
+$--bs-body-color-rgb: white;
+// Import Bootstrap and its default variables
+@import '~bootstrap/scss/bootstrap.scss';
+
+.modal-title {
+color: #880808;
+}
+
+
+
+
+.viewp{
+  height:100vh;
+}
+
+.balance {
+  margin-right: 30px;
+}
+
+.blood-text {
+  color: #880808 !important;
+}
+
+.edo {
+  font-family: edo;
+}
+
+.anton {
+  font-family: anton;
+}
+.margin-top-title{
+  margin-top: 80px;
+}
+
+.giant-title {
+  font-size: 140px;
+  line-height:60px;
+}
+
+.bloody-title {
+  font-size: 100px;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 1.5rem ;
+  background-color: black;
+  color: white;
+}

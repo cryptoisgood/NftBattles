@@ -1,0 +1,14 @@
+// change the theme
+$theme-colors: (
+  "primary": #880808
+);
+$modal-content-bg:                  black;
+$list-group-bg: rgb(157, 157, 157);
+// Import Bootstrap and its default variables
+@import '~bootstrap/scss/bootstrap.scss';
+
+.modal-title {
+
+color: #880808;
+
+}
